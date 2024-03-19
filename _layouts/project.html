@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<header class="post-header">
+  <h1 class="post-title" itemprop="name headline">{{ project.title }} <span style="float:right;"> {{ project.manpower }} ({{ project.start-year }}) </span></h1>
+</header>
+
+<div id="project" class="col-sm-12">
+{{ project.content }}
+
+---
+#### Minimum qualifications
+{{ project.min-qualifications }}
+
+---
+#### Desired skills
+{{ project.expected-skills }}
+
+---
+#### [Apply here]({{ project.application }}){:target="_blank"}
+</div>
+

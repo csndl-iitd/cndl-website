@@ -1,0 +1,57 @@
+- title: Whole-brain modeling for simulating TMS-EEG in neurodegenerative disorders
+  short-title: srg2024
+  manpower: PhD (JRF), summer intern
+  min-qualifications: 'For PhD applicants: NET qualified + institute minimum'
+  expected-skills: |
+    For PhD applicants:  
+    - Strong quantitative background with undergraduate training in physics, computer science, electrical engineering or other quantitative fields
+    - Keen interest in applying physics to biological systems: MRI, electromagnetism, dynamical systems (thorough knowledge of one or more of these will be a plus point)
+    - Excellent coding skills, especially in Python  
+    - Keen interest in performing experiments
+    - Looking for a career in academia (the PI will be able to provide best guidance and advice to such a student)
+    - Good research aptitude and ability to think independently and solve problems
+  start-year: '2024'
+  display: 1
+  image: ''
+  content: |
+    #### Project description  
+    In this project, the student will first build a computational model of the whole brain to simulate some experiments. These experiments can potentially help in detecting the onset of neurodegenerative diseases like dementia at very early stages. In the second part of the study, they will validate the models with actual experiments, and then generate a large experimental dataset.  
+
+    **Computation / modeling:** The whole brain modeling will involve the following broad stages:
+    1. Build a whole-brain model based on _The Virtual Brain (TVB)_ using empirical connectivity data from publicly available datasets for healthy people and people with dementia, stroke etc.
+    2. Simulate the effect of _Transcranial Magnetic Stimulation (TMS)_ on the TVB model. This will involve understanding the electric fields and currents generated inside the brain due to TMS, and how these currents translate into the TVB model.
+    3. Build a mapping from the TVB neural activity to experimentally observable _EEG_.
+    4. Generate a synthetic dataset: use this model stack to simulate experiments involving TMS stimulation and EEG measurement for different stimulation locations on the scalp and for different internal connectivities.
+    5. Build an ML model based on the synthetic data that can distinguish between healthy and diseased brains based on the TMS-EEG experiment.
+    From this effort, we will identify the optimal locations for TMS stimulation that can enable the early detection of neurodegenerative diseases.  
+
+    **Experiments:** In the second phase of the project, the student will perform pilot experiments on healthy and diseased populations based on the results of the simulations to validate the results. After successful pilots, the student will then collect a large dataset of TMS-EEG.  
+
+    #### Opportunities, facilities and perks  
+    - Receive a top-up stipend of at least Rs. 31,000 per month for the first year in addition to the basic PhD stipend of Rs. 37,000.
+    - Full encouragement, support and guidance for applications to _PMRF_ and other prestigious fellowship opportunities to continue extended financial support throughout the PhD.
+    - Work with collaborators in the US and Europe to build a network and create post doc opportunities.
+    - Spend time in collaborator labs in the US / Europe to get more experience.
+    - Work with state-of-the-art equpiment such as high density 128 channel EEG and neuro-navigated TMS at IIT-Jodhpur.
+    - The PI is committed to training the student not only in technical aspects, but also in science communication, grant writing and other very important aspects of doing good science.
+
+    **Internships:** Internship opportunities are available to highly motivated and committed students to work on any one aspect of the computational modeling mentioned above.
+
+    #### Application
+    Highly motivated prospective students (both PhD and interns) should read, try to understand and think deeply about at least one aspect of the project. They should be able to have a meaningful technical conversation with the PI about the topic in an informal interview. Based on the interview, they may be given a short computational project to complete, to test their abilities.  
+    Students also have to fulfill all the institutional requirements and go through the formal IIT Jodhpur School of AI and Data Science admission/interview procedure to be admitted.  
+    Please get in touch with us at the earliest through the form below.
+  application: https://forms.gle/GuQoBR5bWEKSxAC9A
+
+- title: Neural correlates of smartphone addiction
+  manpower: PhD
+  min-qualifications: 'institute minimum'
+  expected-skills: |
+    For PhD applicants:  
+    - good coding skills, especially in Python  
+    - thoughtful in designing experiments
+  start-year: '2025'
+  display: 1
+  image: ''
+  content: >-
+    Coming up soon...

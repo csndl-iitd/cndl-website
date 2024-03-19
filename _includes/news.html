@@ -1,0 +1,13 @@
+
+<div class="well">
+<h4>News</h4>
+
+{% assign sorted_news = site.data.news | sort: "date" | reverse %}
+
+{% for article in sorted_news limit:7 %}
+<p>{{ article.date }}<br>{{ article.headline | markdownify}}</p><hr>
+{% endfor %}
+
+<h6><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h6>
+
+    </div>

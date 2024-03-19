@@ -1,0 +1,296 @@
+- timestamp: 2/2/2024 16:29:50
+  name: Saurabh Gandhi
+  position: Assistant Professor
+  email: sgandhi [at] iitj.ac.in
+  bio1: B.Tech. in Engineering Physics at IIT Bombay (2013)
+  bio2: >-
+    PhD in (bio-)physics, Massachusetts Institute of Technology, with <a
+    href="http://www.gorelab.org/">Jeff Gore</a> (2019)
+  bio3: >-
+    Former scientist at <a href="https://alleninstitute.org/">Allen
+    Institute</a>, Seattle (2019-2021)
+  bio4: <a href="http://web.iitd.ac.in/~gsaurabhr/downloads/cv/srg.pdf">CV</a>
+  image: >-
+    https://drive.google.com/thumbnail?id=1H1eMgF_1yUvdHzjVKdAMwETGMdOuY0av&sz=w300
+  affiliation: Center for Brain Sciences and Applications (IIT-Jodhpur)
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2021'
+- timestamp: 2/9/2024 11:03:05
+  name: Avinash Ranjan
+  position: MS(R) student
+  email: eey227543 [at] iitd.ac.in
+  bio1: Mesoscale whole-brain network modeling, epilepsy, memory in mouse brains
+  bio2: >-
+    Currently interning at the <a href='https://girardeaulab.org/'>Girardeau
+    Lab</a>, Paris
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=12JMLCuBWBIBs2pFA5RoG-3oNvlOic7OM&sz=w300
+  affiliation: Electrical Engineering (IIT-Delhi)
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2022'
+- timestamp: 2/9/2024 11:20:27
+  name: Prakash Mishra
+  position: PhD student
+  email: eez228476 [at] iitd.ac.in
+  bio1: Neural effects of smartphone use, functional connectivity
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=115le0FmBH7ES7O9C6eFnW4UG6NdAu6pv&sz=w300
+  affiliation: Electrical Engineering (IIT-Delhi)
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2023'
+- timestamp: 2/9/2024 11:33:19
+  name: Pragya Verma
+  position: Research Assistant
+  email: pragya9verma [at] gmail.com
+  bio1: Neural effects of smartphone use, EEG biomarkers of anxiety
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1INhajP9goRp4zKYp4t_3_ZaK71j82hDz&sz=w300
+  affiliation: Center for Brain Science and Applications (IIT-Jodhpur)
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2023'
+- timestamp: 2/9/2024 11:42:14
+  name: Aadarsh Gupta
+  position: Undergraduate student
+  email: ee1190451 [at] iitd.ac.in
+  bio1: Sleep and dreams
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1LBP0vLN6pQ856rXROYYN_SoIRDuop2nk&sz=w300
+  affiliation: '-Electrical Engineering (IIT Delhi)'
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 1
+  alumni_current: System Engineer - Enphase Energy
+  year: '2022'
+- timestamp: 2/9/2024 11:45:13
+  name: Ishan Digra
+  position: Undergraduate student
+  email: ee1190485 [at] iitd.ac.in
+  bio1: Classification of neurons based on Neuropixels ephys features
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1gVq8yIdtNw2LCLBBhFf9lJCaoMbm_c9u&sz=w300
+  affiliation: Electrical Engineering (IIT-Delhi)
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 1
+  alumni_current: Software job
+  year: '2022'
+- timestamp: 2/9/2024 11:48:02
+  name: Satvik Dixit
+  position: Undergraduate student
+  email: ee3190128 [at] iitd.ac.in
+  bio1: Classification of neurons based on Neuropixels ephys features
+  bio2: <a href='https://satvik-dixit.github.io/'>Webpage</a>
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1OBfgFWjjxXsmdPbPAYpD9jZk__aCYw80&sz=w300
+  affiliation: Electrical Engineering (IIT-Delhi)
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 1
+  alumni_current: Pursuing MS (Computer Engineering) at Carnegie Mellon University
+  year: '2021'
+- timestamp: 2/9/2024 11:51:42
+  name: Lakshika Rathi
+  position: Undergraduate student
+  email: Lakshika.Rathi.ee119 [at] ee.iitd.ac.in
+  bio1: Applying CURBD model to Neuropixels data
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1E81uUbBdRk0GWbLxCMb148u3e0P6TmM6&sz=w300
+  affiliation: Electircal Engineering (IIT-Delhi)
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 1
+  alumni_current: Pursuing MS (Computer Science) at University of Wisconsin-Madison
+  year: '2022'
+- timestamp: 2/9/2024 13:12:53
+  name: Amod Holla
+  position: Undergraduate student
+  email: Amod.holla.ee120[at]ee.iitd.ac.in
+  bio1: >-
+    Detecting Brain Connectivity Changes with Virtual Transcranial Magnetic
+    Stimulation
+  bio2: >-
+    Simulated the effect of TMS on a virtual brain model using The Virtual Brain
+    (TVB)
+  bio3: >-
+    Attempted to discern differences in stimulation response between normal
+    patients and patients with Alzheimer&#8217;s Disease. 
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1-g5jngteX7cwAEI0GDT3ow6gciMUfp7s&sz=w300
+  affiliation: Electrical Engineering (IIT-Delhi)
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 1
+  alumni_current: Pursuing MS/PhD in the US
+  year: '2023'
+- timestamp: 2/9/2024 13:55:20
+  name: 'Priyansh Garg '
+  position: Intern
+  email: f20201857 [at] pilani.bits-pilani.ac.in
+  bio1: Using CURBD model on EEG dataset
+  bio2: >-
+    We used current-based decomposition (CURBD) model to identify the activity
+    in brain regions responding to a stimulus
+  bio3: >-
+    The differences in the activity between healthy and Alz heimer's patients
+    helped us gauge the affected regions
+  bio4: <a href="https://avg-bitsian.github.io/">My webpage</a>
+  image: >-
+    https://drive.google.com/thumbnail?id=1f-SBy67KagbMaGL1qxwWloExXPSsfO-0&sz=w300
+  affiliation: BITS Pilani, Pilani Campus
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 1
+  alumni_current: Undergraduate Research Intern at Harvard University
+  year: '2023'
+- timestamp: 2/9/2024 15:25:56
+  name: Aviral Gupta
+  position: Undergraduate student
+  email: ph1200687[at]iitd.ac.in
+  bio1: >-
+    PeneWise - Using Machine Learning and Embedded Systems for Cost-Effective
+    Handwriting Digitization
+  bio2: >-
+    Interested in robotics, especially in developing hardware for novel robotic
+    applications.
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1O2lNf1YRYdBhC11n7uRljy7_iLYZP9LS&sz=w300
+  affiliation: Physics (IIT-Delhi)
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2023'
+- timestamp: 2/10/2024 7:34:47
+  name: Swati Khandual
+  position: MSc student
+  email: hcs227005[at]iitd.ac.in; swati.sk589[at]gmail.com
+  bio1: Navigational network in the brain
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1V1Bx1j8ysUqf7ICtORkb3Y1vLgmVFIVH&sz=w300
+  affiliation: Cognitive Science (IIT-Delhi)
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2022'
+- timestamp: 2/10/2024 23:00:41
+  name: Virendra Patel
+  position: MS(R) student
+  email: eey237518 [at] iitd.ac.in
+  bio1: Modeling of dynamics in the mouse brain in different states of consciousness
+  bio2: B.Tech in Electrical Engineering at IITRAM Ahmedabad (2021)
+  bio3: <a href="https://www.linkedin.com/in/virendra-patel-iitd">LinkedIn</a>
+  bio4: 'Personal interests: Chess, Swimming, Traveling, Yoga & Meditation'
+  image: >-
+    https://drive.google.com/thumbnail?id=11f2Um-fYZKD-9hEm3M5VcpSeaJg92BjD&sz=w300
+  affiliation: Electrical Engineering (IIT-Delhi)
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2023'
+- timestamp: 2/12/2024 13:09:31
+  name: Sivashankaran S
+  position: MSc Student
+  email: hcs227012[at]iitd.ac.in
+  bio1: Modelling of the Dynamics of Foveation and Attention in Human Visual System
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1jvuBHVPxGopIe0WKO1W6LaPFvR9M7UPS&sz=w300
+  affiliation: HSS(Humanities and Social Sciences) Department
+  display: 1
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2023'
+- timestamp: 2/15/2024 16:18:19
+  name: Vishal Verma, MSc
+  position: Intern
+  email: vv0747970 [at] gmail.com
+  bio1: >-
+    I work on multidisciplinary topics that brings together Dynamics,
+    Statistical Mechanics, Biological Systems & Computing.
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1arQ3h7u6JlhtMHzVMLHrsf10H4LtlhNn&sz=w300
+  affiliation: Electrical Engineering (IIT-Delhi)
+  display: 0
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: Applying for PhD
+  year: '2023'
+- timestamp: 2/29/2024 1:25:25
+  name: 'Mrinalini Singh '
+  position: Undergraduate student
+  email: msingh24[at]student.scad.edu
+  bio1: 'Trekker Safety Device '
+  bio2: >-
+    Integration of device with Lora and GPS, incorporated in trekking pole,
+    trekker when in trouble can send distsess signal
+  bio3: Reduce rescue search time by the authorities
+  bio4: https://mrinalini.my.canva.site/
+  image: >-
+    https://drive.google.com/thumbnail?id=1iHALitY6tYzskrtxG4drTq7T6nwThm_8&sz=w300
+  affiliation: Industrial design (Savannah College of Art and Design, GA)
+  display: 0
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2023'

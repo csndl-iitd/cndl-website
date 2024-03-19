@@ -1,0 +1,177 @@
+- timestamp: 2/8/2024 15:30:28
+  title: >-
+    A survey of neurophysiological differentiation across mouse visual brain
+    areas and timescales
+  question: >-
+    We previously showed that spevtral differentiation can identify specific
+    brain areas that might be more involved in subjective perception. How does
+    this metric, spectral differentation, depend on the timescale of
+    observation, or change from one brain region to another?
+  impact: >-
+    We used the [Allen Brain Observatory Visul Coding Neuropixels
+    dataset](https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels)
+    to analyze the spectral differentiation of activity of ~50,000 neurons. We
+    found that differentiation of single neurons is maximized at a timescale of
+    ~100 ms, similar to the timescales of conscious perception; and the
+    differentiation of activity of the entire visual cortex most faithfully
+    reflects 'conscious perception' compared to individual areas in the visual
+    cortex.
+  authors: >-
+    SR Gandhi, WGP Mayner, W Marshall, YN Billeh, C Bennett, SD Gale, C
+    Mochizuki, JH Siegle, S Olsen, G Tononi, C Koch, A Arkhipov
+  link_url: https://www.frontiersin.org/articles/10.3389/fncom.2023.1040629/full
+  link_display: Frontiers in Computational Neuroscience (2023)
+  highlight: 0
+  image: ''
+  conference: 0
+  news: ''
+  year: '2023'
+- timestamp: 2/8/2024 17:13:25
+  title: Influence of claustrum on cortex varies by area, layer, and cell type
+  question: >-
+    The claustrum, a centrally connected brain region, has been hypothetized to
+    be involved in consciousness. How does the cortex respond to optogenetic
+    stimulation of the mouse claustrum?
+  impact: >-
+    We found that unlike a few similar recent studies that suggest claustrum
+    stimulation uniformly inhibits the cortex, claustrum stimulation can
+    actually lead to a wide variety of responses in the cortex, depending on the
+    cortical area and cell types observed. We characterized these responses in
+    depth in this manuscript.
+  authors: >-
+    EG McBride, SR Gandhi, JR Kuyat, DR Ollerenshaw, A Arkhipov, C Koch, SR
+    Olsen
+  link_url: https://www.sciencedirect.com/science/article/pii/S089662732200959X
+  link_display: Neuron (2022)
+  highlight: 1
+  image: >-
+    https://drive.google.com/thumbnail?id=1vj0uwq--RnVM19sEt9LxPWq_FOt023WV&sz=w300
+  conference: 0
+  news: >-
+    See further context
+    [here](https://www.tinybluedotfoundation.org/allen-institute/examine-the-role-of-the-claustrum-and-its-cell-types-in-the-full-neural-correlates-of-consciousness-ncc)
+  year: '2022'
+- timestamp: 2/8/2024 17:15:36
+  title: >-
+    Measuring stimulus-evoked neurophysiological differentiation in distinct
+    populations of neurons in mouse visual cortex
+  question: >-
+    Decoding is an extrinsic approach - the experimenter knows what is shown to
+    the subject, and then asks- activity in what brain region can predict what
+    was shown? But what is shown can be very different from what was consciously
+    perceived by the subject. Can a new metric (spectral differentiation)
+    predict what was consciously seen by the subject?
+  impact: >-
+    While decoding neural responses from any of the observed visual areas in
+    mice can predict what was shown to the mouse, spectral differentiation in
+    only specific visual areas (AL, AM) and layers (L2/3) is increased for
+    ethologically 'meaningful' compared to 'meaningless' stimuli. Could it
+    possibly be predicting what the mouse actually saw, not just what it was
+    shown?
+  authors: >-
+    WGP Mayner, W Marshall, YN Billeh, SR Gandhi, S Caldejon, A Cho, F Griffin,
+    N Hancock, S Lambert, EK Lee, JA Luviano, K Mace, C Nayan, TV Nguyen, K
+    North, S Seid, A Williford, C Cirelli, PA Groblewski, J Lecoq, G Tononi, C
+    Koch, A Arkhipov
+  link_url: https://www.eneuro.org/content/9/1/ENEURO.0280-21.2021
+  link_display: ENEURO.0280-21.2021 9 (1) (2022)
+  highlight: 1
+  image: >-
+    https://drive.google.com/thumbnail?id=1dQrwowahsJMN0-eaLpkgTbwlmYA1ZGDB&sz=w300
+  conference: 0
+  news: ''
+  year: '2022'
+- timestamp: 2/8/2024 17:18:00
+  title: >-
+    Cooperation mitigates diversity loss in a spatially expanding microbial
+    population
+  question: >-
+    The qualitative differences in the dynamics of pulled and pushed waves (2016
+    PNAS paper) has a tremendous impact on how the populations evolve,
+    especially how they lose genetic diversity. Can we measure this impact under
+    the well controlled conditions in the lab?
+  impact: >-
+    We demonstrate that pushed waves lose genetic diversity over 100x slower
+    than pulled waves! This demonstrates a seriously large fitness advantage to
+    populations that grow cooperatively compared to competitively.
+  authors: SR Gandhi, KS Korolev, J Gore
+  link_url: https://www.pnas.org/content/116/47/23582
+  link_display: PNAS 116 (47) 23582-23587 (2019)
+  highlight: 0
+  image: >-
+    https://drive.google.com/thumbnail?id=1Z130_gurJymb1DiuT0zEwjqrmDVLuAj_&sz=w300
+  conference: 0
+  news: >-
+    See [commentary](https://www.pnas.org/doi/10.1073/pnas.1917141116) by Mark
+    Lewis.
+  year: '2019'
+- timestamp: 2/8/2024 17:19:23
+  title: >-
+    Range expansions transition from pulled to pushed waves as growth becomes
+    more cooperative in an experimental microbial population
+  question: >-
+    Can we predictably vary the local dynamics of a real biological population
+    to obtain different types of emergent global dynamics in a controlled
+    manner? I studied the eco-evolutionary dynamics in a spatially expanding
+    yeast population.
+  impact: >-
+    We demonstrated the existence of long-predicted pulled and pushed waves in a
+    real biological population in a quantitative manner for the first time.
+  authors: SR Gandhi, EA Yurtsev, KS Korolev, J Gore
+  link_url: https://www.pnas.org/doi/10.1073/pnas.1521056113
+  link_display: PNAS 113, 6922&#8211;6927 (2016)
+  highlight: 0
+  image: >-
+    https://drive.google.com/thumbnail?id=1WXhwbO6cQYYz3iylUtSeX9qy8O_B32TY&sz=w300
+  conference: 0
+  news: >-
+    See [commentary](https://www.pnas.org/doi/10.1073/pnas.1606665113) by Mark
+    Lewis.
+  year: '2016'
+- timestamp: 2/8/2024 17:21:56
+  title: 'Fractional order modified Treves model: Simulation and Learning'
+  question: >-
+    Can fractional order models capture the long first spike latency and
+    downward adaptation of neurons in the Treves model?
+  impact: >-
+    We show that a fractional order modified Treves model can capture both of
+    these features simultaneously, which was not previously observed in simple
+    neuron models.
+  authors: Y Vats, M Mehra, D Oelz, SR Gandhi
+  link_url: https://ieeexplore.ieee.org/document/10153321
+  link_display: ICFDA (2023)
+  highlight: 0
+  image: >-
+    https://drive.google.com/thumbnail?id=1iIBjWzXCZ52m2c-Az5zsuQ_jX6Xny_0I&sz=w300
+  conference: 1
+  news: ''
+  year: '2023'
+- timestamp: 2/18/2024 6:42:34
+  title: >-
+    Interplay between resource dynamics, network structure and spatial
+    propagation of transient explosive synchronization in an adaptively coupled
+    mouse brain network model
+  question: >-
+    Epileptic seizures are considered a dynamic disease of brain networks,
+    representing a complex interplay between the organization of brain networks
+    and the dynamics of metabolic resources. This interplay shapes how seizures
+    initiate and spread in the brain. How do the structure of brain networks and
+    the dynamics of resource allocation influence the generation and propagation
+    of seizures?
+  impact: >-
+    Understanding seizure dynamics at the whole-brain level is crucial for
+    controlling abnormal hypersynchronous activity. Currently, complete brain
+    coverage recordings are lacking in both patients and animal models. In this
+    study, we investigate seizure dynamics at whole brain level <em>in
+    silico</em>. Moreover, our results support existing studies that suggest the
+    cortico-thalamic initiation of generalized seizures, with regions primarily
+    in the cortex initiating the seizures.
+  authors: Avinash Ranjan, Saurabh R. Gandhi
+  link_url: https://doi.org/10.1101/2023.11.11.566570
+  link_display: bioRxiv 2023.11.11.566570
+  highlight: 1
+  image: >-
+    https://drive.google.com/thumbnail?id=1KvGbouvXIRP0ic7n_brpDi2Mu-VvHf_5&sz=w300
+  conference: 0
+  news: ''
+  year: '2023'
