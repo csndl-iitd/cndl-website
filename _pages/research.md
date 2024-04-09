@@ -31,13 +31,15 @@ permalink: /research/
 </div> <!--col-sm-4-->
 
 <div class="col-sm-8" markdown="1">
-The brain was designed to function in environments that are very different from today's digital technology driven world. Information overload, distractions and virtual reality are all affecting our brain and behavior. These problems will only get exacerbated as new technologies like AR/VR get introduced and became pervasive. It is thus imperative to systematically understand how the brain is changing with these technologies.
+The human brain is optimized for functioning in an environment very different from the modern world that it finds itself in. A few salient differences include: over-abundance of information (with internet), instant access to rapidly changing information (smartphones) and non-localized information (Augmented/Virtual Reality). This mismatch between the design target and actual environment naturally leads to pathological conditions such as behavioral problems, including addiction to smartphones. One of the long term directions in our lab is to first understand the neural impact of modern consumer technology. In the future, we envisage predicting the adverse impacts of upcoming technologies and devising mitigation strategies for them.
 
 We study this along two threads:
 
 **Thread 1 -- Neural impact of smartphone overuse:** We are investigating how smartphone notifications evoke anxiety responses in the brain.
 
 Smartphones provide _intermittent variable rewards_, something that has been shown to cause addiction to gambling. Every time you open your phone, an app or swipe to a new post, you are essentially gambling - once in a while you are rewarded, but generally you are disappointed. Is this causing smartphone addiction in a similar way that classical gambling causes addiction? How does smartphone use impact reward processing in the brain?
+
+In addition to addiction, we are also investigating the anxiety and emotional impact of smartphone notifications, their impact on sleep, and information foraging during smartphone use.
 
 **Thread 2 -- Smartphones for 'ecologically valid' cognitive neuroscience:** Classic cognitive neuroscience experiments are performed in the highly artificial laboratory environment, which is likely to strongly affect the results. _Smartphones provide a convinient means to get out of this artificial setup without losing the controlled nature of the lab_. Smartphone use allows us to study _gambling behavior_, _information foraging_, _autonomic emotional responses_ and other phenomena within the lab, but in a much more naturalistic or _ecological_ way.  
 
