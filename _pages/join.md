@@ -47,7 +47,7 @@ You are encouraged to find funding through external programs listed below. Some 
 </h4>
 </div>
 {% if number_printed==0 %}
-<div id="collapse{{ number_printed }}" class="panel-collapse collapse in" markdown="1">
+<div id="collapse{{ number_printed }}" class="panel-collapse collapse" markdown="1">
 {% else %}
 <div id="collapse{{ number_printed }}" class="panel-collapse collapse" markdown="1">
 {% endif %}
