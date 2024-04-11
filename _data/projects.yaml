@@ -55,3 +55,53 @@
   image: ''
   content: >-
     Coming up soon...
+
+- title: Development of smartphone app for collecting fine-grained usage data and integrating physiological / wearable EEG sensor data
+  manpower: Summer Intern
+  min-qualifications: 'App development experience, Java, Flutter, Dart'
+  expected-skills: ''
+  start-year: '2024'
+  display: 1
+  image: ''
+  content: >-
+    For some bigger experiments (see our reserach page), we are developing a smartphone app that will record every interaction of the user with the phone, when it is locked / unlocked, what app is opened etc. The app will also collect and synchronize data streams from physiological sensors from a smartwatch, and from an EEG headband. The intern will work on developing such a corss-platform app.
+
+- title: Distinguishing bottom-up and top-down attentional drives in visual search
+  manpower: Summer Intern
+  min-qualifications: 'interest in cognitive science, web development, psychophysics experiments'
+  expected-skills: ''
+  start-year: '2024'
+  display: 1
+  image: ''
+  content: >-
+    Our visual attention is driven by two factors: (1) something salient in the visual field quickly catches our attention, like a bright spot, or something moving fast; this is called bottom-up attention; and (2) what we are looking for (if we are looking for a cow, certain features of the image may capture our attention). Based on our eye movement and gaze pattern, can we tell which process is dominant at any given instant of time? For this, the intern will (1) perform literature review to understand what we currently know about this, (2) design experiments to collect eyetracking data that will help answer this question and (3) use existing datasets to try and answer this question.
+
+- title: Development of smartphone app for collecting fine-grained usage data and integrating physiological / wearable EEG sensor data
+  manpower: Summer Intern
+  min-qualifications: 'App development experience, Java, Flutter, Dart'
+  expected-skills: ''
+  start-year: '2024'
+  display: 1
+  image: ''
+  content: >-
+    For some bigger experiments (see our reserach page), we are developing a smartphone app that will record every interaction of the user with the phone, when it is locked / unlocked, what app is opened etc. The app will also collect and synchronize data streams from physiological sensors from a smartwatch, and from an EEG headband. The intern will work on developing such a corss-platform app.
+
+- title: Development of smartphone app for collecting fine-grained usage data and integrating physiological / wearable EEG sensor data
+  manpower: Summer Intern
+  min-qualifications: 'App development experience, Java, Flutter, Dart'
+  expected-skills: ''
+  start-year: '2024'
+  display: 1
+  image: ''
+  content: >-
+    For some bigger experiments (see our reserach page), we are developing a smartphone app that will record every interaction of the user with the phone, when it is locked / unlocked, what app is opened etc. The app will also collect and synchronize data streams from physiological sensors from a smartwatch, and from an EEG headband. The intern will work on developing such a corss-platform app.
+
+- title: Development of smartphone app for collecting fine-grained usage data and integrating physiological / wearable EEG sensor data
+  manpower: Summer Intern
+  min-qualifications: 'App development experience, Java, Flutter, Dart'
+  expected-skills: ''
+  start-year: '2024'
+  display: 1
+  image: ''
+  content: >-
+    For some bigger experiments (see our reserach page), we are developing a smartphone app that will record every interaction of the user with the phone, when it is locked / unlocked, what app is opened etc. The app will also collect and synchronize data streams from physiological sensors from a smartwatch, and from an EEG headband. The intern will work on developing such a corss-platform app.
