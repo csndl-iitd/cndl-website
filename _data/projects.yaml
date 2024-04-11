@@ -58,50 +58,46 @@
 
 - title: Development of smartphone app for collecting fine-grained usage data and integrating physiological / wearable EEG sensor data
   manpower: Summer Intern
-  min-qualifications: 'App development experience, Java, Flutter, Dart'
-  expected-skills: ''
+  min-qualifications: 'Prior app development experience'
+  expected-skills: 'Java, Flutter, Dart'
   start-year: '2024'
   display: 1
   image: ''
   content: >-
     For some bigger experiments (see our reserach page), we are developing a smartphone app that will record every interaction of the user with the phone, when it is locked / unlocked, what app is opened etc. The app will also collect and synchronize data streams from physiological sensors from a smartwatch, and from an EEG headband. The intern will work on developing such a corss-platform app.
+  application: https://docs.google.com/forms/d/e/1FAIpQLSdBavSoZAvB4VO8I-O_KHga1Kpn4XzpGIdXFtzTUXiq1gDiDg/viewform
 
 - title: Distinguishing bottom-up and top-down attentional drives in visual search
   manpower: Summer Intern
   min-qualifications: 'interest in cognitive science, web development, psychophysics experiments'
-  expected-skills: ''
+  expected-skills: 'python, web development (for designing and deploying experiments)'
   start-year: '2024'
   display: 1
   image: ''
   content: >-
     Our visual attention is driven by two factors: (1) something salient in the visual field quickly catches our attention, like a bright spot, or something moving fast; this is called bottom-up attention; and (2) what we are looking for (if we are looking for a cow, certain features of the image may capture our attention). Based on our eye movement and gaze pattern, can we tell which process is dominant at any given instant of time? For this, the intern will (1) perform literature review to understand what we currently know about this, (2) design experiments to collect eyetracking data that will help answer this question and (3) use existing datasets to try and answer this question.
+  application: https://docs.google.com/forms/d/e/1FAIpQLSdBavSoZAvB4VO8I-O_KHga1Kpn4XzpGIdXFtzTUXiq1gDiDg/viewform
 
-- title: Development of smartphone app for collecting fine-grained usage data and integrating physiological / wearable EEG sensor data
+- title: Realtime sleep staging
   manpower: Summer Intern
-  min-qualifications: 'App development experience, Java, Flutter, Dart'
-  expected-skills: ''
+  min-qualifications: ''
+  expected-skills: 'Signal processing, ML/DL, LSTMs, transformers'
   start-year: '2024'
   display: 1
   image: ''
   content: >-
-    For some bigger experiments (see our reserach page), we are developing a smartphone app that will record every interaction of the user with the phone, when it is locked / unlocked, what app is opened etc. The app will also collect and synchronize data streams from physiological sensors from a smartwatch, and from an EEG headband. The intern will work on developing such a corss-platform app.
+    Sleep staging is the process of identifying different stages of sleep, such as REM, NREM 1, NREM 2 etc. based on recorded EEG / EMG data. This is typically done by human experts, and to some extent by ML algorithms these days, although still after the dataset is collected. We would like to perform realtime estimation of sleep stage which will be used later for some sleep related experiments. This has been done in rodents recently but not so in humans. The intern will study the problem, brainstorm solutions and apply them to evaluate the results. They will perform realtime staging on existing public datasets and compare against human-graded benchmarks.
+  application: https://docs.google.com/forms/d/e/1FAIpQLSdBavSoZAvB4VO8I-O_KHga1Kpn4XzpGIdXFtzTUXiq1gDiDg/viewform
 
-- title: Development of smartphone app for collecting fine-grained usage data and integrating physiological / wearable EEG sensor data
+- title: Dynamical models of the brain
   manpower: Summer Intern
-  min-qualifications: 'App development experience, Java, Flutter, Dart'
-  expected-skills: ''
+  min-qualifications: 'Interest in physics and dynamics on networks *and* interest in understanding the brain'
+  expected-skills: 'python, simulating ODEs, some theoretical understanding of dynamical systems'
   start-year: '2024'
   display: 1
   image: ''
   content: >-
-    For some bigger experiments (see our reserach page), we are developing a smartphone app that will record every interaction of the user with the phone, when it is locked / unlocked, what app is opened etc. The app will also collect and synchronize data streams from physiological sensors from a smartwatch, and from an EEG headband. The intern will work on developing such a corss-platform app.
+    The intern will build some simple models of the brain. We are looking at mesoscale models, ie models that are not so detailed as to model the individual neurons, but instead model the overall activity in larger areas of the brain. They will explore different models such as Kuramoto oscillators, Wilson-Cowan model etc. to model individual brain regions, and build netowrks of such nodes to model the entire brain.  
 
-- title: Development of smartphone app for collecting fine-grained usage data and integrating physiological / wearable EEG sensor data
-  manpower: Summer Intern
-  min-qualifications: 'App development experience, Java, Flutter, Dart'
-  expected-skills: ''
-  start-year: '2024'
-  display: 1
-  image: ''
-  content: >-
-    For some bigger experiments (see our reserach page), we are developing a smartphone app that will record every interaction of the user with the phone, when it is locked / unlocked, what app is opened etc. The app will also collect and synchronize data streams from physiological sensors from a smartwatch, and from an EEG headband. The intern will work on developing such a corss-platform app.
+    There are several projects based on this theme - understanding dynamics under anesthesia, understanding epilepsy, and the effect of netowrk structure, excitatory to inhibitory ratio, resource availability on the susceptibility to epilepsy etc.
+  application: https://docs.google.com/forms/d/e/1FAIpQLSdBavSoZAvB4VO8I-O_KHga1Kpn4XzpGIdXFtzTUXiq1gDiDg/viewform
