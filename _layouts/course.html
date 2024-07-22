@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl | prepend: site.url}}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="shortcut icon" type ="image/x-icon" href="{{ site.url }}{{ site.baseurl }}/images/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.css" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.css" rel="stylesheet">
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.js'></script>
 
     <script type='text/javascript'>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          // initialView: 'listWeek',
+          initialView: 'listWeek',
           googleCalendarApiKey: 'AIzaSyD4jK7B3JDBBqVZh9rqDYdEczrGvD9oRVs',
           events: {
             googleCalendarId: '0etejkbmt51d2l0enkha78no5c@group.calendar.google.com'
