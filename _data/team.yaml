@@ -202,8 +202,8 @@
   display: 1
   undefined: ''
   acknowledgement: I understand and agree
-  alumni: 0
-  alumni_current: ''
+  alumni: 1
+  alumni_current: Pursuing MS at UC San Diego
   year: '2023'
 - timestamp: 2/10/2024 7:34:47
   name: Swati Khandual
@@ -219,7 +219,7 @@
   display: 1
   undefined: ''
   acknowledgement: I understand and agree
-  alumni: 0
+  alumni: 1
   alumni_current: ''
   year: '2022'
 - timestamp: 2/10/2024 23:00:41
@@ -253,7 +253,7 @@
   display: 1
   undefined: ''
   acknowledgement: I understand and agree
-  alumni: 0
+  alumni: 1
   alumni_current: ''
   year: '2023'
 - timestamp: 2/15/2024 16:18:19
@@ -272,7 +272,7 @@
   display: 0
   undefined: ''
   acknowledgement: I understand and agree
-  alumni: 0
+  alumni: 1
   alumni_current: Applying for PhD
   year: '2023'
 - timestamp: 2/29/2024 1:25:25
@@ -291,6 +291,6 @@
   display: 0
   undefined: ''
   acknowledgement: I understand and agree
-  alumni: 0
+  alumni: 1
   alumni_current: ''
   year: '2023'
