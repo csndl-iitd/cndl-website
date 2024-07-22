@@ -13,20 +13,20 @@
 
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
 
-    <script>
+    <script type='text/javascript'>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'listWeek',
-            googleCalendarApiKey: 'AIzaSyD4jK7B3JDBBqVZh9rqDYdEczrGvD9oRVs',
-            events: {
-              googleCalendarId: '0etejkbmt51d2l0enkha78no5c@group.calendar.google.com'
-            },
-            eventClick: function(event) {
-              // opens events in a popup window
-              window.open(event.url, '_blank', 'width=700,height=600');
-              return false;
-            }
+          // initialView: 'listWeek',
+          googleCalendarApiKey: 'AIzaSyD4jK7B3JDBBqVZh9rqDYdEczrGvD9oRVs',
+          events: {
+            googleCalendarId: '0etejkbmt51d2l0enkha78no5c@group.calendar.google.com'
+          },
+          eventClick: function(event) {
+            // opens events in a popup window
+            window.open(event.url, '_blank', 'width=700,height=600');
+            return false;
+          }
         });
 
         calendar.render();
