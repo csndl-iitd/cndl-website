@@ -66,10 +66,10 @@
   image: >-
     https://drive.google.com/thumbnail?id=1INhajP9goRp4zKYp4t_3_ZaK71j82hDz&sz=w300
   affiliation: Center for Brain Science and Applications (IIT-Jodhpur)
-  display: 1
+  display: 0
   undefined: ''
   acknowledgement: I understand and agree
-  alumni: 0
+  alumni: 1
   alumni_current: ''
   year: '2023'
 - timestamp: 2/9/2024 11:42:14
@@ -83,7 +83,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1LBP0vLN6pQ856rXROYYN_SoIRDuop2nk&sz=w300
   affiliation: '-Electrical Engineering (IIT Delhi)'
-  display: 1
+  display: 0
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 1
@@ -100,7 +100,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1gVq8yIdtNw2LCLBBhFf9lJCaoMbm_c9u&sz=w300
   affiliation: Electrical Engineering (IIT-Delhi)
-  display: 1
+  display: 0
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 1
@@ -117,7 +117,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1OBfgFWjjxXsmdPbPAYpD9jZk__aCYw80&sz=w300
   affiliation: Electrical Engineering (IIT-Delhi)
-  display: 1
+  display: 0
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 1
@@ -134,7 +134,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1E81uUbBdRk0GWbLxCMb148u3e0P6TmM6&sz=w300
   affiliation: Electircal Engineering (IIT-Delhi)
-  display: 1
+  display: 0
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 1
@@ -157,7 +157,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1-g5jngteX7cwAEI0GDT3ow6gciMUfp7s&sz=w300
   affiliation: Electrical Engineering (IIT-Delhi)
-  display: 1
+  display: 0
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 1
@@ -199,7 +199,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1O2lNf1YRYdBhC11n7uRljy7_iLYZP9LS&sz=w300
   affiliation: Physics (IIT-Delhi)
-  display: 1
+  display: 0
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 1
@@ -216,7 +216,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1V1Bx1j8ysUqf7ICtORkb3Y1vLgmVFIVH&sz=w300
   affiliation: Cognitive Science (IIT-Delhi)
-  display: 1
+  display: 0
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 1
@@ -250,7 +250,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1jvuBHVPxGopIe0WKO1W6LaPFvR9M7UPS&sz=w300
   affiliation: HSS(Humanities and Social Sciences) Department
-  display: 1
+  display: 0
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 1
@@ -309,10 +309,10 @@
   image: >-
     https://drive.google.com/thumbnail?id=1rW_iQ1uhdSHda3clB4y2ylq-psKhHW5f&sz=w300
   affiliation: School of Artificial Intelligence and Data Science (IIT Jodhpur)
-  display: 1
+  display: 0
   undefined: ''
   acknowledgement: I understand and agree
-  alumni: 0
+  alumni: 1
   alumni_current: ''
   year: '2025'
 - timestamp: 2/17/2025 16:38:39
@@ -332,3 +332,24 @@
   alumni: 0
   alumni_current: ''
   year: '2024'
+- timestamp: 4/16/2025 14:35:21
+  name: Saundarya Prakash
+  position: Research Assistant
+  email: saundarya7456[at]gmail.com
+  bio1: >-
+    Short longitudinal study to investigate the effects of exercise on brain
+    cognition, emotional responses and stress. 
+  bio2: >-
+    BS-MS (Biological Sciences) at Indian Institute of Science Education
+    Research Bhopal (2024)
+  bio3: 'Graduate Research Assistant at National Brain Research Centre Manesar '
+  bio4: 'MITACS GRI at University of Regina, SK, Canada '
+  image: >-
+    https://drive.google.com/thumbnail?id=1VakIBBXAKNHvbQGIcAEaVkbV8zViczc4&sz=w300
+  affiliation: ' Center for Brain Science and Applications, School of Artificial Intelligence and Data Science (IIT Jodhpur)'
+  display: 0
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 1
+  alumni_current: ''
+  year: '2025'
