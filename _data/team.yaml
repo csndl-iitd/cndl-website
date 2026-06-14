@@ -353,3 +353,81 @@
   alumni: 1
   alumni_current: ''
   year: '2025'
+- timestamp: 6/2/2026 20:49:37
+  name: Abhishil Prasad
+  position: Undergraduate student
+  email: f20240402[at]pilani.bits-pilani.ac.in
+  bio1: >-
+    Mesoscale mouse brain stimulation modelling using Jansen-Rit neural mass
+    model
+  bio2: B.E BITS Pilani (f20240402@pilani.bits-pilani.ac.in)
+  bio3: >-
+    Simulating anaesthesia effects on mouse brain connectivity and signal
+    propagation
+  bio4: https://github.com/smartpenguin25
+  image: >-
+    https://drive.google.com/thumbnail?id=1PJ_arsgGaBgdyzbjWsCdGI5mPE5c37Q7&sz=w300
+  affiliation: 'BITS Pilani '
+  display: 0
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2026'
+- timestamp: 6/2/2026 21:32:50
+  name: Parth Kaushik
+  position: Undergraduate student
+  email: f20240961[at]pilani.bits-pilani.ac.in
+  bio1: 'Teaching Tools '
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1Sio6_ehE5JllKjtZseY-X0AfZOx9vaBd&sz=w300
+  affiliation: Computer Science and Engineering (BITS Pilani)
+  display: 0
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2026'
+- timestamp: 6/2/2026 23:45:07
+  name: Jahnvi Singh
+  position: Undergraduate student
+  email: f20240013[at]pilani.bits-pilani.ac.in
+  bio1: >-
+    Neural Correlates of C-A-P framework based Cognitive levels in Learning
+    Tasks
+  bio2: >-
+    Bridges neuroscience & learning sciences with EEG-based validation of
+    pedagogical efficacy
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1fi1a1TZ0I3HTB4yc3JP3ffjaWu-q4jNL&sz=w300
+  affiliation: Computer Science (BITS Pilani, Pilani Campus)
+  display: 0
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2026'
+- timestamp: 6/3/2026 18:36:09
+  name: Nimish Kumar
+  position: PhD student
+  email: p20250082[at]pilani.bits-pilani.ac.in
+  bio1: >-
+    Empirical connectivity informed whole brain network models of
+    neurodegenerative disorders
+  bio2: ''
+  bio3: ''
+  bio4: ''
+  image: >-
+    https://drive.google.com/thumbnail?id=1m_nJycccYRSHVc1xQL7_2ewt2CMWXhHL&sz=w300
+  affiliation: Electrical & Electronics engineering ( BITS Pilani)
+  display: 0
+  undefined: ''
+  acknowledgement: I understand and agree
+  alumni: 0
+  alumni_current: ''
+  year: '2024'
