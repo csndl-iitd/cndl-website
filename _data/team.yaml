@@ -326,7 +326,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1MJFKRysq-R2dhg2bf_nFMGDj561UJHhk&sz=w300
   affiliation: School of Artificial Intelligence and Data Science (IIT Jodhpur)
-  display: 1
+  display: 0
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 0
@@ -368,7 +368,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1PJ_arsgGaBgdyzbjWsCdGI5mPE5c37Q7&sz=w300
   affiliation: 'BITS Pilani '
-  display: 0
+  display: 1
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 0
@@ -385,7 +385,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1Sio6_ehE5JllKjtZseY-X0AfZOx9vaBd&sz=w300
   affiliation: Computer Science and Engineering (BITS Pilani)
-  display: 0
+  display: 1
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 0
@@ -406,7 +406,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1fi1a1TZ0I3HTB4yc3JP3ffjaWu-q4jNL&sz=w300
   affiliation: Computer Science (BITS Pilani, Pilani Campus)
-  display: 0
+  display: 1
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 0
@@ -425,7 +425,7 @@
   image: >-
     https://drive.google.com/thumbnail?id=1m_nJycccYRSHVc1xQL7_2ewt2CMWXhHL&sz=w300
   affiliation: Electrical & Electronics engineering ( BITS Pilani)
-  display: 0
+  display: 1
   undefined: ''
   acknowledgement: I understand and agree
   alumni: 0
