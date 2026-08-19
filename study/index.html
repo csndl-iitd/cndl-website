@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LearnLog Study — Cognition &amp; Neural Dynamics Lab</title>
+<meta name="description" content="How the LearnLog study works, exactly what the extension records, and how to check that for yourself.">
+<style>
+  :root{
+    --ink:#102A43;
+    --ink-2:#243B53;
+    --body:#334E68;
+    --muted:#627D98;
+    --line:#D9E2EC;
+    --wash:#F7F9FB;
+    --paper:#FFFFFF;
+    --sand:#E9C46A;
+    --sand-wash:#FBF3E0;
+    --sand-ink:#5C4813;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:#EDEFF3;
+    color:var(--body);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:800px;margin:0 auto;background:var(--paper);}
+  .pad{padding:0 56px;}
+  @media (max-width:640px){ .pad{padding:0 22px;} }
+
+  /* ── header ── */
+  header{background:var(--ink);color:#fff;padding:52px 56px 46px;}
+  @media (max-width:640px){ header{padding:38px 22px 34px;} }
+  .eyebrow{
+    font:12px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:1.6px;text-transform:uppercase;color:var(--sand);margin:0 0 20px;
+  }
+  header h1{
+    font:normal 40px/1.15 Georgia,"Times New Roman",serif;
+    color:#fff;margin:0 0 18px;
+  }
+  @media (max-width:640px){ header h1{font-size:30px;} }
+  header p{color:#9FB3C8;font-size:18px;margin:0;max-width:56ch;}
+
+  /* ── type ── */
+  h2{
+    font:normal 27px/1.25 Georgia,"Times New Roman",serif;
+    color:var(--ink);margin:52px 0 6px;
+  }
+  h2 + .sub{color:var(--muted);font-size:15px;margin:0 0 22px;}
+  h3{font:normal 20px/1.3 Georgia,"Times New Roman",serif;color:var(--ink);margin:32px 0 10px;}
+  p{margin:0 0 16px;}
+  a{color:#2C6E9B;}
+  strong{color:var(--ink);}
+  code{
+    font:13px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    background:var(--wash);border:1px solid var(--line);padding:1px 5px;color:var(--ink-2);
+  }
+  hr{border:0;border-top:1px solid var(--line);margin:0;}
+
+  /* ── the gate sequence ── */
+  .gate{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);}
+  .gate:last-child{border-bottom:0;}
+  .gate .n{
+    flex:0 0 34px;height:34px;line-height:34px;text-align:center;
+    background:var(--ink);color:var(--sand);
+    font:14px/34px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  .gate .t{font-weight:600;color:var(--ink);display:block;margin-bottom:3px;}
+  .gate p{margin:0;font-size:15px;}
+
+  /* ── tables ── */
+  table{width:100%;border-collapse:collapse;margin:0 0 8px;font-size:15px;}
+  th{
+    text-align:left;font:11px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);
+    padding:0 0 9px;border-bottom:2px solid var(--ink);font-weight:normal;
+  }
+  td{padding:11px 14px 11px 0;border-bottom:1px solid var(--line);vertical-align:top;}
+  td:last-child{padding-right:0;}
+  td.k{color:var(--ink);width:38%;}
+  td.src{
+    font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    color:var(--muted);white-space:nowrap;
+  }
+  @media (max-width:640px){
+    td.k{width:auto;}
+    td.src{white-space:normal;}
+  }
+
+  /* ── callouts ── */
+  .box{background:var(--wash);border:1px solid var(--line);padding:22px 24px;margin:0 0 18px;}
+  .box.warm{background:var(--sand-wash);border-color:var(--sand);}
+  .box p:last-child{margin-bottom:0;}
+  .box .lead{font:normal 19px/1.35 Georgia,"Times New Roman",serif;color:var(--ink);margin:0 0 10px;}
+
+  .never{background:var(--wash);border-left:3px solid var(--ink);padding:4px 0 4px 22px;margin:0 0 20px;}
+  .never li{margin:0 0 7px;}
+  .never ul{margin:14px 0;padding-left:18px;}
+
+  /* ── FAQ ── */
+  details{border-bottom:1px solid var(--line);padding:0;}
+  details summary{
+    cursor:pointer;padding:16px 30px 16px 0;color:var(--ink);font-weight:600;
+    list-style:none;position:relative;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary::after{
+    content:"+";position:absolute;right:4px;top:14px;
+    font:20px/1 ui-monospace,monospace;color:var(--sand-ink);
+  }
+  details[open] summary::after{content:"\2212";}
+  details summary:hover{color:#2C6E9B;}
+  details .a{padding:0 0 18px;font-size:15px;}
+  details .a p:last-child{margin-bottom:0;}
+  details:focus-within summary{outline:2px solid var(--sand);outline-offset:2px;}
+
+  /* ── CTA ── */
+  .cta{background:var(--ink);padding:44px 56px;margin-top:56px;text-align:center;}
+  @media (max-width:640px){ .cta{padding:34px 22px;} }
+  .cta .lead{font:normal 25px/1.3 Georgia,"Times New Roman",serif;color:#fff;margin:0 0 22px;}
+  .btn{
+    display:inline-block;background:var(--sand);color:var(--ink);
+    padding:16px 40px;text-decoration:none;font-weight:700;font-size:17px;
+  }
+  .btn:hover{background:#F0D48A;}
+  .cta .fine{color:#9FB3C8;font-size:14px;margin:20px 0 0;}
+  .cta .fine a{color:var(--sand);}
+
+  footer{padding:32px 56px 44px;color:var(--muted);font-size:14px;}
+  @media (max-width:640px){ footer{padding:26px 22px 36px;} }
+  footer p{margin:0 0 8px;}
+  .stamp{font:12px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#9FB3C8;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Cognition &amp; Neural Dynamics Lab &nbsp;·&nbsp; Birla AI Labs</p>
+  <h1>The LearnLog study, in plain terms</h1>
+  <p>The source code is public, but reading it is a big ask. This page sits in between: what we
+     record, why, and how to check that we are telling the truth.</p>
+</header>
+
+<div class="pad">
+
+  <h2>What we are trying to find out</h2>
+  <p class="sub">The short version</p>
+
+  <p>Last semester we watched students use AI on a single assignment. How they prompted predicted how
+     well they understood the material that day — and predicted nothing at all about what they still
+     knew a week later.</p>
+
+  <p>That gap is the whole question. Something about the way people work with these tools decides
+     whether the understanding sticks, and nobody yet knows what it is. A single assignment is too
+     short a window to see it, so this semester we are following AI use across an entire course, and
+     recording what students' brains do while they work.</p>
+
+  <h2>How it works</h2>
+  <p class="sub">Four independent gates. Data only exists if all of them are open.</p>
+
+  <div class="gate">
+    <div class="n">1</div>
+    <div>
+      <span class="t">You create an account and give consent</span>
+      <p>You choose your own email and password — we never see the password. Until you tick the
+         consent box in the extension's settings, nothing at all is recorded. You can withdraw
+         consent from the same page and recording stops immediately.</p>
+    </div>
+  </div>
+
+  <div class="gate">
+    <div class="n">2</div>
+    <div>
+      <span class="t">You say yes to a specific chat</span>
+      <p>The first time you send a message in a new conversation on ChatGPT, Claude or Gemini, a small
+         box asks whether to log it. Say no, or ignore it, and that whole conversation is discarded —
+         including the messages you already sent. You are not asked about it again.</p>
+    </div>
+  </div>
+
+  <div class="gate">
+    <div class="n">3</div>
+    <div>
+      <span class="t">You allow each file separately</span>
+      <p>Attach something to a logged chat and a second box asks whether to include the file itself.
+         Decline and only its name, type and size are recorded — the bytes never leave your machine.</p>
+    </div>
+  </div>
+
+  <div class="gate">
+    <div class="n">4</div>
+    <div>
+      <span class="t">You can pause any time</span>
+      <p>One switch in the popup halts everything. While paused, nothing is captured and nothing is
+         held — events are dropped at the source, not queued for later.</p>
+    </div>
+  </div>
+
+  <h3>One detail worth knowing</h3>
+  <p>The consent box appears after your first message, because until you have said something we do not
+     know a new conversation exists. Those opening messages are <strong>held inside your
+     browser</strong> while the box is on screen. If you say yes, they are released and logged with
+     the rest. If you say no, they are destroyed without ever reaching the network.</p>
+
+  <h2>Exactly what is recorded</h2>
+  <p class="sub">For a chat you said yes to — and nothing else</p>
+
+  <h3>The conversation</h3>
+  <table>
+    <tr><th>What</th><th>Detail</th></tr>
+    <tr><td class="k">Your messages</td><td>Full text, with email addresses and long digit strings automatically replaced before anything is stored.</td></tr>
+    <tr><td class="k">The AI's replies</td><td>Full text, plus which model produced it when the site exposes that.</td></tr>
+    <tr><td class="k">Topic and context</td><td>The two labels you pick — topic groups related chats across all three AI tools; context is whether it was tutorial, self-study, lab or lecture.</td></tr>
+    <tr><td class="k">Basic metadata</td><td>Timestamp, which platform, a conversation identifier, message order, and the extension version.</td></tr>
+    <tr><td class="k">Attached files</td><td>Only with separate permission each time. Otherwise name, type and size alone.</td></tr>
+  </table>
+
+  <h3>How you worked, not just what you wrote</h3>
+  <div class="box warm">
+    <p class="lead">This is the part people do not expect, so we are stating it plainly</p>
+    <p>Understanding whether AI use helps learning means knowing more than the words exchanged. A
+       prompt typed slowly after thinking is a different event from one pasted in ten seconds. So for
+       a chat you have agreed to log, the extension also records timing and interaction patterns.</p>
+  </div>
+
+  <table>
+    <tr><th>Signal</th><th>What it means</th></tr>
+    <tr><td class="k">Reading time</td><td>Gap between the AI finishing its reply and your first keystroke.</td></tr>
+    <tr><td class="k">Composition time</td><td>First keystroke to sending.</td></tr>
+    <tr><td class="k">Edits while composing</td><td>How many times you deleted while writing a message. Not what you deleted — only how often.</td></tr>
+    <tr><td class="k">Pastes into the box</td><td>How many times you pasted text in.</td></tr>
+    <tr><td class="k">Copying out of a reply</td><td>That you copied text matching a recent AI reply, and roughly how much.</td></tr>
+    <tr><td class="k">Attention</td><td>Whether the tab lost focus while a reply generated; idle stretches over a minute; returning after time away.</td></tr>
+    <tr><td class="k">Scrolling back</td><td>That you returned to an earlier message, and how long you stayed there.</td></tr>
+    <tr><td class="k">Regenerate and edit</td><td>That you asked for another answer, or edited an earlier message.</td></tr>
+  </table>
+  <p style="font-size:14px;color:var(--muted);margin-top:14px;">
+    All of it is confined to the logged conversation. None of it captures keystrokes, clipboard
+    contents, or anything on any other page.</p>
+
+  <h3>Never recorded, under any circumstances</h3>
+  <div class="never">
+    <ul>
+      <li>Chats you declined, or any chat while the extension is paused</li>
+      <li>Anything at all before you sign in and consent</li>
+      <li>Any website other than ChatGPT, Claude and Gemini — the extension has no permission to run anywhere else</li>
+      <li>Your passwords, your clipboard, or your browsing history</li>
+      <li>Anything outside a Chrome tab: phone apps, Copilot, Cursor, VS Code and the rest are invisible to it</li>
+    </ul>
+  </div>
+
+  <h2>Check it yourself</h2>
+  <p class="sub">Every claim above, and where it lives in the code</p>
+
+  <p>You do not have to trust a summary written by the people running the study. Each row points at
+     the file that makes the promise true.</p>
+
+  <table>
+    <tr><th>The claim</th><th>Where to look</th></tr>
+    <tr><td class="k">It can only run on three sites</td><td class="src">manifest.json → host_permissions and content_scripts</td></tr>
+    <tr><td class="k">Emails and long numbers are stripped in your browser</td><td class="src">content.js → scrub(), ~line 118</td></tr>
+    <tr><td class="k">Timing signals are measured, not keystrokes</td><td class="src">content.js → ~lines 847–850</td></tr>
+    <tr><td class="k">Declining destroys the held messages</td><td class="src">content.js → ~line 1348</td></tr>
+    <tr><td class="k">Pausing drops events rather than queueing them</td><td class="src">content.js → studyActive(), ~line 652</td></tr>
+    <tr><td class="k">You can read only your own rows, never anyone else's</td><td class="src">LEARNLOG_SQL.sql → "own read events" policy</td></tr>
+    <tr><td class="k">Attachment files are private, with no public links</td><td class="src">LEARNLOG_SQL.sql → attachments bucket policies</td></tr>
+    <tr><td class="k">Full list of every signal collected</td><td class="src">SIGNALS.md</td></tr>
+  </table>
+
+  <p style="margin-top:18px;">The <code>tabs</code> permission that Chrome mentions at install is worth
+     explaining, because it sounds worse than it is. It is used in exactly one way: to send a message
+     to a tab that is already on one of the three AI sites. The query is filtered to those three
+     addresses, so the extension cannot enumerate your other tabs or see their addresses.</p>
+
+  <h2>Where the data goes, and who can see it</h2>
+
+  <p>Logs are held briefly in your browser, then uploaded to a Supabase database. Database rules mean
+     a signed-in participant can read their own rows and nobody else's — that restriction is enforced
+     by the server, not by the extension, so it holds even if someone modifies their copy of the code.</p>
+
+  <p><strong>Your data is anonymous.</strong> Nothing shared, published, or seen by any other
+     researcher can be traced back to you. Dr. Saurabh Gandhi is the only person able to connect an
+     account to a name, and that link is removed before the data goes anywhere else. Anonymised data
+     may be shared and reused for further scientific research beyond this course; once released that
+     way it can no longer be traced to you, and therefore can no longer be withdrawn — so if you want
+     your data removed, ask before the end of the semester.</p>
+
+  <div class="box">
+    <p class="lead">Your participation never affects your grades</p>
+    <p>Your prompts are never marked, never shown to anyone assessing your work, and never used for
+       or against you. Taking part, skipping it, or quitting halfway changes nothing about your
+       standing in this course.</p>
+    <p>At the end of the semester we do compare study data against course performance — that is how
+       we find out whether AI use relates to what people actually learn. It runs one way only: your
+       marks inform the research, and the research never touches your marks.</p>
+  </div>
+
+  <h2>The two groups</h2>
+
+  <p>Participants are randomly assigned to one of two groups. About six weeks in, one group starts
+     receiving occasional feedback on their own prompting habits — specific suggestions aimed at the
+     kind of understanding that survives the week. The other group does not.</p>
+
+  <p>Neither you nor we choose which group you land in; assignment is random, and that is the point.
+     If everyone received feedback there would be nothing to compare against, and the study could not
+     answer its own question. <strong>If you are in the group that does not receive feedback during
+     the study, you get the same material once the study closes.</strong> Everyone gets it. The
+     difference is timing.</p>
+
+  <h2>Questions</h2>
+  <p class="sub">Including the awkward ones</p>
+
+  <details>
+    <summary>Will any of this affect my marks?</summary>
+    <div class="a"><p>No. Your prompts are never marked and never shown to anyone assessing your
+      work. Signing up, not signing up, or withdrawing in week nine has no effect on your standing.
+      Course performance is used at the end of the semester as a research measure — it tells us
+      whether AI use relates to learning. It never runs the other way.</p></div>
+  </details>
+
+  <details>
+    <summary>Can my instructor read what I typed and know it was me?</summary>
+    <div class="a"><p>Dr. Gandhi holds the only link between accounts and names, so in principle yes.
+      That is the honest answer and you should know it before signing up. In practice the analysis is
+      done across the cohort, not by reading individuals, and the identity link is stripped before any
+      other researcher sees anything. If a particular conversation is one you would rather nobody saw,
+      answer no to the box, or pause.</p></div>
+  </details>
+
+  <details>
+    <summary>Does it record my other browsing?</summary>
+    <div class="a"><p>It cannot. A Chrome extension can only run where its manifest permits, and
+      LearnLog's manifest lists ChatGPT, Claude and Gemini. Other tabs are not merely ignored — the
+      code has no access to them at all. You can verify this in <code>manifest.json</code> without
+      knowing how to program: the list of sites is right there.</p></div>
+  </details>
+
+  <details>
+    <summary>Why does Chrome warn me about it?</summary>
+    <div class="a"><p>Because for now you install it manually rather than from the Chrome Web Store,
+      and Chrome shows that yellow banner for every manually installed extension regardless of what it
+      does. It is a statement about how the extension was installed, not about what it contains. A Web
+      Store version is a few weeks away and we will send it to everyone when it lands.</p></div>
+  </details>
+
+  <details>
+    <summary>What happens to the messages I send before the box appears?</summary>
+    <div class="a"><p>They wait inside your browser. Say yes and they are logged with the rest of the
+      conversation; say no and they are destroyed without ever being uploaded. The box has to come
+      after your first message because until then there is no conversation for it to ask about.</p></div>
+  </details>
+
+  <details>
+    <summary>I forgot to pause and logged something personal. What now?</summary>
+    <div class="a"><p>Email Dr. Gandhi and it will be deleted. You do not need to say what it was or
+      why. This happens, it is expected, and it is not a problem.</p></div>
+  </details>
+
+  <details>
+    <summary>Can I see what you have on me?</summary>
+    <div class="a"><p>Yes — open the extension's settings and scroll to "My data". Everything held
+      about you is listed there and you can download the lot as a spreadsheet or data file. Deletion
+      goes through Dr. Gandhi rather than a button, deliberately: the database has no delete
+      permission for participants, which is also what stops anyone deleting someone else's rows.</p></div>
+  </details>
+
+  <details>
+    <summary>Does it work on my phone, or with Copilot?</summary>
+    <div class="a"><p>No. It only sees ChatGPT, Claude and Gemini in a Chrome tab on a computer.
+      Phone apps, Copilot, Cursor and editor plugins are invisible to it. That is a genuine limitation
+      of the study and we would rather state it than pretend otherwise.</p></div>
+  </details>
+
+  <details>
+    <summary>Can I use it on more than one computer?</summary>
+    <div class="a"><p>Yes. Install it and sign in with the same account on each — everything lands
+      under one participant identity regardless of which machine you were using.</p></div>
+  </details>
+
+  <details>
+    <summary>What if I lose internet?</summary>
+    <div class="a"><p>Nothing is lost. Events queue on your own machine and upload when you
+      reconnect.</p></div>
+  </details>
+
+  <details>
+    <summary>I do not think I am very good at using AI. Is that a problem?</summary>
+    <div class="a"><p>The opposite. A study made only of confident power users would tell us almost
+      nothing. What we need is the honest range, which means people who are unsure, people who barely
+      use it, and people who use it constantly. There is no standard to meet and nothing you can do
+      wrong.</p></div>
+  </details>
+
+  <details>
+    <summary>Should I use AI differently now that I am being watched?</summary>
+    <div class="a"><p>Please do not. Behaving unusually for the study makes the research worse, not
+      better — we are trying to observe how people actually work. If a chat is one you would rather
+      not have logged, say no to it. Otherwise carry on exactly as you were.</p></div>
+  </details>
+
+  <details>
+    <summary>Do I have to do the brain study?</summary>
+    <div class="a"><p>No. It is optional, separate, and has its own consent process. Saying you are
+      interested on the sign-up form commits you to nothing, and declining later affects nothing.</p></div>
+  </details>
+
+  <details>
+    <summary>Can I quit partway through?</summary>
+    <div class="a"><p>Yes, at any point, without giving a reason. Withdraw consent in the settings
+      page and recording stops immediately. Tell Dr. Gandhi if you also want the data already
+      collected removed.</p></div>
+  </details>
+
+  <details>
+    <summary>What happens to all this at the end?</summary>
+    <div class="a"><p>Anonymised data is analysed, written up, and made available for other
+      researchers to reuse — that is normal practice and it is how findings get checked by people
+      other than us. You will get a personalised summary of your own AI use, and the findings will be
+      shared with the class.</p></div>
+  </details>
+
+</div>
+
+<div class="cta">
+  <p class="lead">Still up for it?</p>
+  <a class="btn" href="https://forms.gle/rKjHumvFvtF2x8VDA">Sign up — takes two minutes</a>
+  <p class="fine">Questions first? Write to
+    <a href="mailto:saurabh.gandhi@pilani.bits-pilani.ac.in">saurabh.gandhi@pilani.bits-pilani.ac.in</a>.
+    No question is too basic or too sceptical.</p>
+</div>
+
+<footer>
+  <p><strong style="color:var(--ink);">Dr. Saurabh Gandhi</strong> — Cognition &amp; Neural Dynamics
+     Lab, with Birla AI Labs</p>
+  <p>Participation is voluntary and unrelated to assessment in any course.</p>
+  <p class="stamp">Extension v1.4.0 · consent version 3.0 · page last updated 19 August 2026</p>
+</footer>
+
+</div>
+</body>
+</html>
