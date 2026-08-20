@@ -141,8 +141,7 @@
 <header>
   <p class="eyebrow">Cognition &amp; Neural Dynamics Lab &nbsp;·&nbsp; Birla AI Labs</p>
   <h1>The LearnLog study, in plain terms</h1>
-  <p>The source code is public, but reading it is a big ask. This page sits in between: what we
-     record, why, and how to check that we are telling the truth.</p>
+  <p>This page explains what we record, and why.</p>
 </header>
 
 <div class="pad">
@@ -151,13 +150,12 @@
   <p class="sub">The short version</p>
 
   <p>Last semester we watched students use AI on a single assignment. How they prompted predicted how
-     well they understood the material that day — and predicted nothing at all about what they still
-     knew a week later.</p>
+     well they understood the material on that day, but not their long term learning - what they remembered one week later.</p>
 
   <p>That gap is the whole question. Something about the way people work with these tools decides
      whether the understanding sticks, and nobody yet knows what it is. A single assignment is too
      short a window to see it, so this semester we are following AI use across an entire course, and
-     recording what students' brains do while they work.</p>
+     recording what students' brains do while they use AI.</p>
 
   <h2>How it works</h2>
   <p class="sub">Four independent gates. Data only exists if all of them are open.</p>
@@ -177,8 +175,7 @@
     <div>
       <span class="t">You say yes to a specific chat</span>
       <p>The first time you send a message in a new conversation on ChatGPT, Claude or Gemini, a small
-         box asks whether to log it. Say no, or ignore it, and that whole conversation is discarded —
-         including the messages you already sent. You are not asked about it again.</p>
+         box asks whether to log it. Say no, or ignore it, and that whole conversation is discarded. You are not asked about it again.</p>
     </div>
   </div>
 
@@ -187,7 +184,7 @@
     <div>
       <span class="t">You allow each file separately</span>
       <p>Attach something to a logged chat and a second box asks whether to include the file itself.
-         Decline and only its name, type and size are recorded — the bytes never leave your machine.</p>
+         Decline and only its name, type and size are recorded.</p>
     </div>
   </div>
 
@@ -195,8 +192,7 @@
     <div class="n">4</div>
     <div>
       <span class="t">You can pause any time</span>
-      <p>One switch in the popup halts everything. While paused, nothing is captured and nothing is
-         held — events are dropped at the source, not queued for later.</p>
+      <p>Logging can be paused for a an approved chat also. While paused, nothing is captured till you unpause.</p>
     </div>
   </div>
 
@@ -207,7 +203,7 @@
      the rest. If you say no, they are destroyed without ever reaching the network.</p>
 
   <h2>Exactly what is recorded</h2>
-  <p class="sub">For a chat you said yes to — and nothing else</p>
+  <p class="sub">For a chat you said yes to</p>
 
   <h3>The conversation</h3>
   <table>
@@ -223,15 +219,15 @@
   <div class="box warm">
     <p class="lead">This is the part people do not expect, so we are stating it plainly</p>
     <p>Understanding whether AI use helps learning means knowing more than the words exchanged. A
-       prompt typed slowly after thinking is a different event from one pasted in ten seconds. So for
+       prompt typed slowly after thinking is a different event from one pasted in three seconds. So for
        a chat you have agreed to log, the extension also records timing and interaction patterns.</p>
   </div>
 
   <table>
     <tr><th>Signal</th><th>What it means</th></tr>
     <tr><td class="k">Reading time</td><td>Gap between the AI finishing its reply and your first keystroke.</td></tr>
-    <tr><td class="k">Composition time</td><td>First keystroke to sending.</td></tr>
-    <tr><td class="k">Edits while composing</td><td>How many times you deleted while writing a message. Not what you deleted — only how often.</td></tr>
+    <tr><td class="k">Composition time</td><td>Time from first keystroke to sending the prompt.</td></tr>
+    <tr><td class="k">Edits while composing</td><td>How many times you deleted while writing a message.</td></tr>
     <tr><td class="k">Pastes into the box</td><td>How many times you pasted text in.</td></tr>
     <tr><td class="k">Copying out of a reply</td><td>That you copied text matching a recent AI reply, and roughly how much.</td></tr>
     <tr><td class="k">Attention</td><td>Whether the tab lost focus while a reply generated; idle stretches over a minute; returning after time away.</td></tr>
@@ -255,9 +251,6 @@
 
   <h2>Check it yourself</h2>
   <p class="sub">Every claim above, and where it lives in the code</p>
-
-  <p>You do not have to trust a summary written by the people running the study. Each row points at
-     the file that makes the promise true.</p>
 
   <table>
     <tr><th>The claim</th><th>Where to look</th></tr>
@@ -286,8 +279,7 @@
      researcher can be traced back to you. Dr. Saurabh Gandhi is the only person able to connect an
      account to a name, and that link is removed before the data goes anywhere else. Anonymised data
      may be shared and reused for further scientific research beyond this course; once released that
-     way it can no longer be traced to you, and therefore can no longer be withdrawn — so if you want
-     your data removed, ask before the end of the semester.</p>
+     way it can no longer be traced to you, and therefore can no longer be withdrawn.</p>
 
   <div class="box">
     <p class="lead">Your participation never affects your grades</p>
@@ -296,7 +288,7 @@
        standing in this course.</p>
     <p>At the end of the semester we do compare study data against course performance — that is how
        we find out whether AI use relates to what people actually learn. It runs one way only: your
-       marks inform the research, and the research never touches your marks.</p>
+       marks inform the research, and the research never affects your marks.</p>
   </div>
 
   <h2>The two groups</h2>
@@ -308,8 +300,7 @@
   <p>Neither you nor we choose which group you land in; assignment is random, and that is the point.
      If everyone received feedback there would be nothing to compare against, and the study could not
      answer its own question. <strong>If you are in the group that does not receive feedback during
-     the study, you get the same material once the study closes.</strong> Everyone gets it. The
-     difference is timing.</p>
+     the study, you can start receiving feedback once the study closes.</strong>
 
   <h2>Questions</h2>
   <p class="sub">Including the awkward ones</p>
@@ -325,7 +316,7 @@
   <details>
     <summary>Can my instructor read what I typed and know it was me?</summary>
     <div class="a"><p>Dr. Gandhi holds the only link between accounts and names, so in principle yes.
-      That is the honest answer and you should know it before signing up. In practice the analysis is
+      In practice the analysis is
       done across the cohort, not by reading individuals, and the identity link is stripped before any
       other researcher sees anything. If a particular conversation is one you would rather nobody saw,
       answer no to the box, or pause.</p></div>
@@ -357,22 +348,19 @@
   <details>
     <summary>I forgot to pause and logged something personal. What now?</summary>
     <div class="a"><p>Email Dr. Gandhi and it will be deleted. You do not need to say what it was or
-      why. This happens, it is expected, and it is not a problem.</p></div>
+      why. This happens, it is expected, and it is not a problem. A future version will allow you to remove recent log entries manually.</p></div>
   </details>
 
   <details>
     <summary>Can I see what you have on me?</summary>
     <div class="a"><p>Yes — open the extension's settings and scroll to "My data". Everything held
-      about you is listed there and you can download the lot as a spreadsheet or data file. Deletion
-      goes through Dr. Gandhi rather than a button, deliberately: the database has no delete
-      permission for participants, which is also what stops anyone deleting someone else's rows.</p></div>
+      about you is listed there and you can download the lot as a spreadsheet or data file.</p></div>
   </details>
 
   <details>
     <summary>Does it work on my phone, or with Copilot?</summary>
     <div class="a"><p>No. It only sees ChatGPT, Claude and Gemini in a Chrome tab on a computer.
-      Phone apps, Copilot, Cursor and editor plugins are invisible to it. That is a genuine limitation
-      of the study and we would rather state it than pretend otherwise.</p></div>
+      Phone apps, Copilot, Cursor and editor plugins are invisible to it.</p></div>
   </details>
 
   <details>
@@ -411,8 +399,7 @@
   <details>
     <summary>Can I quit partway through?</summary>
     <div class="a"><p>Yes, at any point, without giving a reason. Withdraw consent in the settings
-      page and recording stops immediately. Tell Dr. Gandhi if you also want the data already
-      collected removed.</p></div>
+      page and recording stops immediately.</p></div>
   </details>
 
   <details>
@@ -426,7 +413,7 @@
 </div>
 
 <div class="cta">
-  <p class="lead">Still up for it?</p>
+  <p class="lead">Ready for it?</p>
   <a class="btn" href="https://forms.gle/rKjHumvFvtF2x8VDA">Sign up — takes two minutes</a>
   <p class="fine">Questions first? Write to
     <a href="mailto:saurabh.gandhi@pilani.bits-pilani.ac.in">saurabh.gandhi@pilani.bits-pilani.ac.in</a>.
@@ -434,7 +421,7 @@
 </div>
 
 <footer>
-  <p><strong style="color:var(--ink);">Dr. Saurabh Gandhi</strong> — Cognition &amp; Neural Dynamics
+  <p>Cognition &amp; Neural Dynamics
      Lab, with Birla AI Labs</p>
   <p>Participation is voluntary and unrelated to assessment in any course.</p>
   <p class="stamp">Extension v1.4.0 · consent version 3.0 · page last updated 19 August 2026</p>
