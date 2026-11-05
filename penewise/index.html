@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>penEwise Motion Dashboard</title>
+<style>
+  :root {
+    --bg: #0b1018; --panel: #111722; --panel2: #1a2230; --line: #273244;
+    --text: #dce6f2; --muted: #8493a7; --good: #39b875; --bad: #d05b69; --warn: #d9a441;
+    --x: #41a5ff; --y: #43d17b; --z: #ff657a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+           padding: 12px 16px; background: var(--panel); border-bottom: 1px solid var(--line);
+           position: sticky; top: 0; z-index: 5; }
+  h1 { font-size: 16px; margin: 0 8px 0 0; font-weight: 650; }
+  .grow { flex: 1; }
+  button, select, input[type=number] {
+    background: var(--panel2); color: var(--text); border: 1px solid var(--line);
+    border-radius: 6px; padding: 6px 12px; font: inherit; }
+  button { cursor: pointer; }
+  button:hover:not(:disabled) { border-color: var(--muted); }
+  button:disabled { opacity: .45; cursor: default; }
+  button.primary { background: #1d5fa8; border-color: #2a78cc; }
+  button.primary.on { background: #7a2b36; border-color: var(--bad); }
+  label.chk { display: inline-flex; gap: 5px; align-items: center; color: var(--muted); cursor: pointer; }
+  .status { font-weight: 600; color: var(--bad); }
+  .status.ok { color: var(--good); }
+  main { padding: 14px 16px 30px; max-width: 1300px; margin: 0 auto; display: grid; gap: 14px; }
+  .cards { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .card h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em;
+             color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .pill { background: var(--line); color: var(--muted); font-weight: 600; border-radius: 6px;
+          padding: 4px 10px; font-size: 13px; }
+  .pill.on { background: var(--good); color: #fff; }
+  .pill.warn { background: var(--warn); color: #1b1405; }
+  .pill.bad { background: var(--bad); color: #fff; }
+  .big { font-size: 26px; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .bar { height: 9px; background: var(--line); border-radius: 5px; overflow: hidden; margin: 8px 0; }
+  .bar > i { display: block; height: 100%; width: 0; background: var(--good); transition: width .3s; }
+  .small { color: var(--muted); font-size: 12px; }
+  .mono { font-family: ui-monospace, Consolas, monospace; }
+  .plotcard { padding: 10px 12px 12px; }
+  .plothead { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-bottom: 6px; }
+  .plothead h2 { margin: 0; color: var(--text); font-size: 14px; text-transform: none; letter-spacing: 0; }
+  .val { font-family: ui-monospace, Consolas, monospace; font-weight: 600; font-size: 14px;
+         background: var(--panel2); border-radius: 5px; padding: 3px 9px; min-width: 150px; text-align: center; }
+  .val.x { color: var(--x); } .val.y { color: var(--y); } .val.z { color: var(--z); }
+  canvas { width: 100%; height: 230px; display: block; background: #0d131c; border-radius: 6px; }
+  .warnbox { background: #3a2a10; border: 1px solid var(--warn); color: #f1d9a3;
+             border-radius: 8px; padding: 10px 14px; display: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>penEwise</h1>
+  <button id="connect" class="primary">Connect</button>
+  <span id="status" class="status">Disconnected</span>
+  <span class="grow"></span>
+  <label class="small">Rate
+    <select id="rate"></select> Hz
+  </label>
+  <button id="applyRate" disabled>Apply</button>
+  <label class="small">Window
+    <select id="window">
+      <option value="5">5 s</option><option value="10" selected>10 s</option>
+      <option value="30">30 s</option><option value="60">60 s</option>
+    </select>
+  </label>
+  <button id="pause">Pause</button>
+  <button id="clear">Clear</button>
+  <button id="export" disabled>Export CSV</button>
+</header>
+
+<main>
+  <div id="unsupported" class="warnbox">
+    Web Bluetooth is not available in this browser. Use Chrome, Edge or Opera (desktop or Android),
+    and open this page from a local file or HTTPS.
+  </div>
+
+  <div class="cards">
+    <section class="card">
+      <h2>Battery</h2>
+      <div class="row"><span id="batV" class="big">—</span><span id="batPct" class="small"></span></div>
+      <div class="bar"><i id="batBar"></i></div>
+      <div class="row">
+        <span id="batState" class="pill">unknown</span>
+        <span id="batS1" class="pill">STAT1 —</span>
+        <span id="batS2" class="pill">STAT2 —</span>
+      </div>
+      <div class="small mono" style="margin-top:8px">raw: <span id="batRaw">—</span></div>
+    </section>
+
+    <section class="card">
+      <h2>Touch &amp; calibration</h2>
+      <div class="row" style="margin-bottom:8px"><span id="calib" class="pill">Calibration unknown</span></div>
+      <div class="row" id="keys"></div>
+    </section>
+
+    <section class="card">
+      <h2>Link &amp; power saving</h2>
+      <div class="row" style="margin-bottom:8px"><span id="sleep" class="pill">Sleep timer: unavailable</span></div>
+      <div class="small">Packets: <b id="sCount">0</b> · Lost: <b id="sLost">0</b> · Rate: <b id="sRate">—</b> Hz</div>
+      <div class="small">Logged samples: <b id="sLog">0</b></div>
+    </section>
+  </div>
+
+  <section class="card plotcard">
+    <div class="plothead">
+      <h2>Acceleration (mg)</h2>
+      <span id="aX" class="val x">X —</span><span id="aY" class="val y">Y —</span><span id="aZ" class="val z">Z —</span>
+      <span class="grow"></span>
+      <label class="chk"><input type="checkbox" data-plot="accel" data-axis="0" checked>X</label>
+      <label class="chk"><input type="checkbox" data-plot="accel" data-axis="1" checked>Y</label>
+      <label class="chk"><input type="checkbox" data-plot="accel" data-axis="2" checked>Z</label>
+    </div>
+    <canvas id="accelCanvas"></canvas>
+  </section>
+
+  <section class="card plotcard">
+    <div class="plothead">
+      <h2>Angular rate (mdps)</h2>
+      <span id="gX" class="val x">X —</span><span id="gY" class="val y">Y —</span><span id="gZ" class="val z">Z —</span>
+      <span class="grow"></span>
+      <label class="chk"><input type="checkbox" data-plot="gyro" data-axis="0" checked>X</label>
+      <label class="chk"><input type="checkbox" data-plot="gyro" data-axis="1" checked>Y</label>
+      <label class="chk"><input type="checkbox" data-plot="gyro" data-axis="2" checked>Z</label>
+    </div>
+    <canvas id="gyroCanvas"></canvas>
+  </section>
+</main>
+
+<script src="penewise.js"></script>
+</body>
+</html>
